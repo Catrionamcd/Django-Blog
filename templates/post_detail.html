@@ -14,9 +14,12 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                <!-- <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%"> -->
+                <img src="https://res.cloudinary.com/catriona/image/upload/v1632916230/sunset-g7cdf16fee_640_bbwxen.jpg" width="100%">
+
                 {% else %}
-                <img src="" width="100%">
+                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                <!-- <img src="" width="100%"> -->
                 {% endif %}
             </div>
         </div>
